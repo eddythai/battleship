@@ -1,2 +1,3 @@
-const body = document.querySelector("body")
-body.innerText = "hello world!!!"
+const Game = require('./components/Game')
+
+Game.start()

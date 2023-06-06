@@ -12,7 +12,7 @@ const Board = () => {
 
     function receiveAttack(x, y) {
         const hitCoord = board[x-1][y-1]
-        if( hitCoord != 0) {
+        if( hitCoord ) {
             hitCoord.hit()
         } else {
             this.missedArr.push([x-1,y-1])
